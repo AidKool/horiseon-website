@@ -1,12 +1,55 @@
+/* 
+======= TABLE OF CONTENTS =======
+1. RESET
+2. GLOBAL
+3. HEADER
+4. NAV
+5. MAIN
+6. ASIDE
+7. FOOTER
+8. COLOUR PALETTE
+9. FONTS
+=================================
+*/
+
+/* === RESET === */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* === GLOBAL === */
+
 body {
   background-color: #d9dcd6;
 }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* === HEADER === */
 
 .header {
   padding: 20px;
@@ -24,6 +67,8 @@ body {
   color: #d9dcd6;
 }
 
+/* === NAV === */
+
 .header nav {
   padding-top: 15px;
   margin-right: 20px;
@@ -32,24 +77,13 @@ body {
   font-size: 20px;
 }
 
-.header nav ul {
-  list-style-type: none;
-}
-
 .header nav ul li {
   display: inline-block;
   margin: 0;
   margin-left: 25px;
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-p {
-  font-size: 16px;
-}
+/* === BANNER === */
 
 .hero {
   height: 800px;
@@ -60,18 +94,10 @@ p {
   background-position: center;
 }
 
-.float-left {
-  float: left;
-  margin-right: 25px;
-}
-
-.float-right {
-  float: right;
-  margin-left: 25px;
-}
+/* === MAIN === */
 
 main {
-  display: inline;
+  display: inline; /* To create a row with the benefits aside */
 }
 
 .content {
@@ -79,6 +105,26 @@ main {
   display: inline-block;
   margin-left: 20px;
 }
+
+.content-card {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+.content-card img {
+  max-height: 200px;
+}
+
+.content-card h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+/* === ASIDE === */
 
 .benefits {
   margin-right: 20px;
@@ -91,107 +137,23 @@ main {
   background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit {
   margin-bottom: 32px;
   color: #ffffff;
 }
 
-.benefit-brand {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.benefit-cost {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit h3 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.benefit-brand h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-cost h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-lead img {
+.benefit img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
-.benefit-brand img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.benefit-cost img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.search-engine-optimization {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
-.online-reputation-management {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
-.social-media-marketing {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #0072bb;
-  color: #ffffff;
-}
-
-.search-engine-optimization img {
-  max-height: 200px;
-}
-
-.online-reputation-management img {
-  max-height: 200px;
-}
-
-.social-media-marketing img {
-  max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.online-reputation-management h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.social-media-marketing h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
+/* === FOOTER === */
 
 .footer {
   padding: 30px;
@@ -203,3 +165,20 @@ main {
 .footer h2 {
   font-size: 20px;
 }
+
+/* COLOR PALETTE
+
+#d9dcd6: Celeste (background for body and font colour for SEO)
+#ffffff: White (font colour for links and headers)
+#2a607c: Calypso (background colour for header)
+#0072bb: Lochmara (background for content cards in main)
+#2589bd: Curious Blue (background for benefits aside)
+
+*/
+
+/* FONTS
+
+header and footer: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif
+navigation, content cards, and aside: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+*/
